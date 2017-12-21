@@ -6,12 +6,12 @@
 
 // the setup function runs once when you press reset or power the board
 #include <SPI.h>
-#include "ADS12xx.h"
-//#include "ADS1232.h"
-#include "ADS1231.h"
+#include "Arduino-shared\ADS1232.h"
+#include "Arduino-shared\EEPROMAnything.h"
+#include "Arduino-shared\external\ADS1231\ADS1231.h"
 #include <stdarg.h>
 #include <string.h>
-#include "EEPROMAnything.h"
+
 
 #define SPI_SCK     13
 #define SPI_MOSI    11

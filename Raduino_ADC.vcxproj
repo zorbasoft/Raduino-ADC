@@ -48,8 +48,8 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\Raduino_ADC;$(ProjectDir)..\..\Arduino1.8.5\libraries;$(ProjectDir)..\..\Arduino1.8.5\hardware\arduino\avr\libraries;$(ProjectDir)..\libraries;$(ProjectDir)..\..\Arduino1.8.5\hardware\arduino\avr\cores\arduino;$(ProjectDir)..\..\Arduino1.8.5\hardware\arduino\avr\variants\eightanaloginputs;$(ProjectDir)..\..\Arduino1.8.5\hardware\tools\avr\avr\include\;$(ProjectDir)..\..\Arduino1.8.5\hardware\tools\avr\avr\include\avr\;$(ProjectDir)..\..\Arduino1.8.5\hardware\tools\avr\lib\gcc\avr\4.8.1\include;$(ProjectDir)..\..\Arduino1.8.5\hardware\tools\avr\lib\gcc\avr\4.9.2\include;$(ProjectDir)..\..\Arduino1.8.5\hardware\tools\avr\lib\gcc\avr\4.9.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ProjectDir)__vm\.Raduino_ADC.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\Raduino-ADC;D:\PROGRAM_FILES\Arduino\Arduino1.8.5\hardware\arduino\avr\libraries\SPI\src;D:\PROGRAM_FILES\Arduino\Arduino1.8.5\hardware\arduino\avr\libraries\EEPROM\src;D:\PROGRAM_FILES\Arduino\Arduino1.8.5\libraries;D:\PROGRAM_FILES\Arduino\Arduino1.8.5\hardware\arduino\avr\libraries;D:\PROGRAM_FILES\Arduino\projekty\libraries;D:\PROGRAM_FILES\Arduino\Arduino1.8.5\hardware\arduino\avr\cores\arduino;D:\PROGRAM_FILES\Arduino\Arduino1.8.5\hardware\arduino\avr\variants\eightanaloginputs;D:\PROGRAM_FILES\Arduino\Arduino1.8.5\hardware\tools\avr\avr\include\;D:\PROGRAM_FILES\Arduino\Arduino1.8.5\hardware\tools\avr\avr\include\avr\;D:\PROGRAM_FILES\Arduino\Arduino1.8.5\hardware\tools\avr\lib\gcc\avr\4.8.1\include;D:\PROGRAM_FILES\Arduino\Arduino1.8.5\hardware\tools\avr\lib\gcc\avr\4.9.2\include;D:\PROGRAM_FILES\Arduino\Arduino1.8.5\hardware\tools\avr\lib\gcc\avr\4.9.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)__vm\.Raduino-ADC.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
       <PreprocessorDefinitions>__AVR_ATmega328p__;__AVR_ATmega328P__;F_CPU=16000000L;ARDUINO=10805;ARDUINO_AVR_NANO;ARDUINO_ARCH_AVR;__cplusplus=201103L;_VMICRO_INTELLISENSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
@@ -80,7 +80,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Arduino-shared\ADS1232.h" />
+    <ClInclude Include="Arduino-shared\EEPROMAnything.h" />
+    <ClInclude Include="Arduino-shared\external\ADS1231\ADS1231.h" />
     <ClInclude Include="__vm\.Raduino_ADC.vsarduino.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Arduino-shared\ADS1232.cpp" />
+    <ClCompile Include="Arduino-shared\external\ADS1231\ADS1231.cpp" />
   </ItemGroup>
   <PropertyGroup>
     <DebuggerFlavor>VisualMicroDebugger</DebuggerFlavor>
