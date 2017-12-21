@@ -1,0 +1,3 @@
+[submodule "Arduino-shared"]
+	path = Arduino-shared
+	url = https://github.com/zorbasoft/Arduino-shared.git
